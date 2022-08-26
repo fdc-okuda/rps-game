@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .title-you{
+            text-align: center;
+        }
+        .you{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            position: relative;
+        }
+        .cross{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+        .hand{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: rotate(90deg)
+        }
+        .fist{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: rotate(270deg);
+        }
+        .equals{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        .circle{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        .xmark{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+        }
+        .middle{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+        .clear{
+            margin-top: 20px;
+        }
+        .title-cpu{
+            text-align: center;
+        }
+        .cpu{
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+            position: relative;
+        }
+        .cross-cpu{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+        .hand-cpu{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: rotate(90deg)
+        }
+        .fist-cpu{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transform: rotate(270deg);
+        }
+        .equals-cpu{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        .circle-cpu{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        .xmark-cpu{
+            object-fit: contain;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    </style>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="left">
+                <p class="title-you">You</p>
+                <div class="you">
+                    <div><img src="img/scissors.png" class="cross" alt=""></div>
+                    <div><img src="img/paper.png" class="hand" alt=""></div>
+                    <div><img src="img/rock.png" class="fist" alt=""></div>
+                    <div><img src="img/equal.png" class="equals" alt=""></div>
+                    <div><img src="img/circle.png" class="circle" alt=""></div>
+                    <div><img src="img/xmark.png" class="xmark" alt=""></div>
+                </div>
+                <div class="options">
+                    <button class="rock">Rock</button>
+                    <button class="paper">Paper</button>
+                    <button class="scissors">Scissors</button>
+                </div>
+            </div>
+            <div class="middle">
+                <button class="fight">Fight</button>
+                <button class="clear">Clear</button>
+            </div>
+            <div class="right">
+                <p class="title-cpu">CPU</p>
+                <div class="cpu">
+                    <div><img src="img/scissors.png" class="cross-cpu" alt=""></div>
+                    <div><img src="img/paper.png" class="hand-cpu" alt=""></div>
+                    <div><img src="img/rock.png" class="fist-cpu" alt=""></div>
+                    <div><img src="img/equal.png" class="equals-cpu" alt=""></div>
+                    <div><img src="img/circle.png" class="circle-cpu" alt=""></div>
+                    <div><img src="img/xmark.png" class="xmark-cpu" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
